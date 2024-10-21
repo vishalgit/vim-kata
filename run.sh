@@ -1,2 +1,3 @@
 #!/bin/bash -e
-kvim -S config.vim -S main.vim -c 'call LoadCurrentKata()'
+export NVIM_APPNAME=kickstart
+nvim -S config.vim -S main.vim -c 'call LoadCurrentKata()'
