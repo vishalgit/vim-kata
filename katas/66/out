@@ -1,0 +1,59 @@
+Task: Practice efficient file navigation in a React component library using Neovim/Telescope.
+
+Project Structure:
+src/
+  ├── components/
+  │   └── Button/
+  │       ├── Button.tsx
+  │       ├── types.ts
+  │       └── styles.ts
+  └── theme/
+      ├── index.ts
+      └── types.ts
+
+Exercises:
+1. Basic File Navigation:
+   - :e src/components/Button/Button.tsx
+   - :find Button.tsx
+   - gf on import statements
+
+2. Telescope File Finding (if available):
+   - <leader>ff to find files
+   - Type 'button' to fuzzy find Button files
+   - Type 'types.ts' to find type definitions
+   
+3. Telescope Live Grep (if available):
+   - <leader>fg to grep in all files
+   - Search for 'ButtonProps' to find usages
+   - Search for 'theme' to find theme-related code
+
+4. Buffer Navigation:
+   - :ls to list open buffers
+   - :b Button to switch to Button.tsx
+   - :b# to switch to previous buffer
+   
+5. Advanced Telescope (if available):
+   - <leader>fb to search buffers
+   - <leader>fh to search help tags
+   - <C-p> for git files
+   
+6. Jump Between Related Files:
+   - Navigate from Button.tsx to its types
+   - Find all theme imports
+   - Locate style definitions
+
+Tips:
+- Use <C-^> to switch between current and last buffer
+- :cd src to change working directory
+- Use tab completion with :e and :find
+- Type <C-g> to see current file path
+- Use :Ex or :Sex for native file explorer
+- Combine with % for current file path: :e %:h/types.ts
+
+Telescope-specific tips (if available):
+- <C-n>/<C-p> to move in results
+- <C-t> to open in new tab
+- <C-v> to open in vertical split
+- <C-x> to open in horizontal split
+- <C-q> to send results to quickfix
+- Use regex in search patterns 
