@@ -1,0 +1,31 @@
+src/components/Button.jsx:
+// TODO(design): Add hover styles - PRIORITY: medium
+function Button({ children }) {
+    return <button>{children}</button>;
+}
+
+src/utils/validation.js:
+function validateEmail(email) {
+    // TODO(backend): Implement RFC 5322 email validation - PRIORITY: high
+    return true;
+}
+
+src/pages/auth/Login.jsx:
+function Login() {
+    // TODO(error): Add error boundary and logging - PRIORITY: high
+    return (
+        <form onSubmit={handleSubmit}>
+            {/* TODO(validation): Add Formik validation schema - PRIORITY: high */}
+            <input type="email" />
+        </form>
+    );
+}
+
+tests/components/Button.test.jsx:
+describe('Button', () => {
+    // TODO(test): Add hover state interaction tests - PRIORITY: medium
+    test('renders children', () => {
+        // TODO(test): Add accessibility and style assertions - PRIORITY: medium
+        expect(true).toBe(true);
+    });
+}); 

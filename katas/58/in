@@ -1,0 +1,31 @@
+src/components/Button.jsx:
+// TODO: Add hover styles
+function Button({ children }) {
+    return <button>{children}</button>;
+}
+
+src/utils/validation.js:
+function validateEmail(email) {
+    // TODO: implement email validation
+    return true;
+}
+
+src/pages/auth/Login.jsx:
+function Login() {
+    // TODO add error handling
+    return (
+        <form onSubmit={handleSubmit}>
+            {/* TODO: Add form validation */}
+            <input type="email" />
+        </form>
+    );
+}
+
+tests/components/Button.test.jsx:
+describe('Button', () => {
+    // TODO write hover tests
+    test('renders children', () => {
+        // TODO: Add more assertions
+        expect(true).toBe(true);
+    });
+}); 

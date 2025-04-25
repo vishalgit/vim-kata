@@ -1,0 +1,30 @@
+utils/format.js:
+function formatData(data) {
+    return JSON.stringify(data, null, 2);
+}
+
+function formatDate(date) {
+    return new Date(date).toLocaleDateString();
+}
+
+api/response.js:
+function handleResponse(res) {
+    const data = res.data;
+    return formatData(data);
+}
+
+views/display.js:
+class DataView {
+    render(rawData) {
+        const formatted = formatData(rawData);
+        document.getElementById('output').innerHTML = formatted;
+    }
+}
+
+tests/format.test.js:
+describe('formatData', () => {
+    test('formats object correctly', () => {
+        const input = { name: 'test' };
+        expect(formatData(input)).toBe('{\n  "name": "test"\n}');
+    });
+}); 

@@ -1,0 +1,23 @@
+Task: Convert all CommonJS require/exports to ES6 import/export syntax across the Node.js application.
+
+Expected changes:
+1. Convert require statements to import:
+   - const x = require('y') → import x from 'y'
+   - const { x } = require('y') → import { x } from 'y'
+2. Convert exports to ES6 syntax:
+   - module.exports = x → export default x
+   - module.exports = { x } → export { x }
+
+Solution steps:
+1. :args **/*.js to select all JavaScript files
+2. Convert requires to imports:
+   - :argdo %s/const \(.*\) = require(\(.*\));/import \1 from \2;/g
+   - :argdo %s/const { \(.*\) } = require(\(.*\));/import { \1 } from \2;/g
+3. Convert exports:
+   - :argdo %s/module\.exports = \(.*\);/export default \1;/g
+   - :argdo %s/module\.exports = { \(.*\) };/export { \1 };/g
+
+Alternative approaches:
+- Use :grep "require(" or :grep "module.exports" to find files first
+- Use :cdo for targeted replacements
+- Handle each pattern separately with :vimgrep and :cfdo 

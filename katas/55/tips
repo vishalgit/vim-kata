@@ -1,0 +1,4 @@
+1. :args *.js to select all JavaScript files
+2. :argdo %s/\([^;]\)$/\1;/g to add semicolons to lines missing them
+3. :argdo update to save all changes
+4. Alternative: :bufdo or :cdo could also work here 
