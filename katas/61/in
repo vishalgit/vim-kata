@@ -1,3 +1,4 @@
+-- template.sql
 INSERT INTO users (id, name, email, created_at) VALUES (1, 'User 1', 'user1@example.com', NOW());
 INSERT INTO users (id, name, email, created_at) VALUES (2, 'User 2', 'user2@example.com', NOW());
 INSERT INTO users (id, name, email, created_at) VALUES (3, 'User 3', 'user3@example.com', NOW());

@@ -1,3 +1,4 @@
+/* changelog.md */
 ## [Unreleased] - $(date '+\%Y-\%m-\%d')
 
 :r!git log -5 --pretty=format:"- %s" --no-merges 
