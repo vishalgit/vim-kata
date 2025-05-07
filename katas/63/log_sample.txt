@@ -1,9 +1,0 @@
-[2024-03-15T09:23:45.123Z] ERROR user_id=12345 - Failed login attempt from IP=192.168.1.100
-[2024-03-15T09:23:47.456Z] INFO user_id=12345 session=abc123 - Password reset requested
-[2024-03-15T09:24:01.789Z] DEBUG user_id=12345 - Sending email to user@example.com
-[2024-03-15T09:24:02.321Z] INFO user_id=98765 session=xyz789 - New user registration
-[2024-03-15T09:24:15.654Z] WARN user_id=98765 - Rate limit (100/hour) approaching: 95 requests
-[2024-03-15T09:25:00.123Z] ERROR user_id=12345 - Database connection timeout after 30s
-[2024-03-15T09:25:05.789Z] INFO user_id=12345 session=abc123 - Session expired
-[2024-03-15T09:25:10.456Z] DEBUG user_id=98765 - Cache miss for key: user_preferences_98765
-[2024-03-15T09:26:00.987Z] ERROR user_id=98765 - Invalid JSON in request: {name: "test" 

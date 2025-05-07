@@ -1,6 +1,0 @@
-1. :grep "console.debug" *.js to find all console.debug calls
-2. :cdo s/console.debug/console.log/g to replace in all matches
-3. :cdo update to save all changes
-4. Alternative approaches:
-   - :args *.js followed by :argdo %s/console.debug/console.log/g
-   - :bufdo %s/console.debug/console.log/g if files are already in buffer list 
